@@ -1,0 +1,66 @@
+library:
+  source-dirs: src
+tests:
+  dbgpproxy-test:
+    source-dirs: test
+    main: Spec.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -O2
+    dependencies:
+    - dbgpproxy
+copyright: 2018 Author name here
+maintainer: example@example.com
+dependencies:
+- clock
+- attoparsec
+- base64-bytestring
+- async
+- xml-conduit
+- iproute
+- network
+- containers
+- sqlite-simple
+- formatting
+- bytestring
+- streaming-commons
+- word8
+- conduit
+- conduit-extra
+- string-conversions
+- safe-exceptions
+- text
+- stm-chans
+- lifted-async
+- stm
+- monad-control
+- mtl
+- yaml
+- aeson
+- time
+- filepath
+- directory
+- optparse-applicative
+- base >= 4.7 && < 5
+name: dbgpproxy
+version: 0.1.0.0
+extra-source-files:
+- README.md
+- ChangeLog.md
+author: Author name here
+github: githubuser/dbgpproxy
+license: BSD3
+executables:
+  dbgpproxy:
+    source-dirs: app
+    main: Main.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -O2
+    dependencies:
+    - dbgpproxy
+description: Please see the README on GitHub at <https://github.com/githubuser/dbgpproxy#readme>

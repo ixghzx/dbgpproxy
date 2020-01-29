@@ -1,0 +1,16 @@
+:set -XOverloadedStrings
+:set prompt  "\x03BB: "
+import IxLib
+import Telegram
+import           Conduit                                                
+import           Data.Conduit.Network
+import           Network.Socket
+import           Data.IP
+import           Data.ByteString
+import qualified Data.ByteString               as BS
+import           Data.Maybe
+import           Data.Either
+import           Data.Map                       ( (!?))
+import           Data.Function
+import           Text.XML
+import           Database.SQLite.Simple
